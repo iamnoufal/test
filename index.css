@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;1,400;1,600;1,900&family=Roboto:ital,wght@0,100;0,500;1,400;1,500;1,900&display=swap");
+body {
+  font-size: 2vw;
+  background-image: url("gce.jpeg");
+  background-color:#7f8174;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+  margin:0;
+  padding:0;
+}
+
+#top {
+  font-weight: bold;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width:100%
+}
+
+#menu {
+  display:flex;
+  right:0;
+  position: absolute;
+}
+
+.container {
+  margin: 0 10vw;
+  padding: 2vw 15vw;
+  background-color: rgba(255,255,255,0.8);
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.signinbtn {
+  min-width: 40vw;
+  background-color: rgba(0,0,0,0.5);
+  transition: 0.5s;
+  font-size: large;
+  padding: 1vw;
+  color: white;
+  cursor: pointer;
+}
+
+.signinbtn:hover{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.btn {
+  min-width: 40vw;
+  background-color: rgba(134, 192, 219, 0.5);
+  transition: 0.5s;
+  padding: 1vw;
+  cursor: pointer
+}
+
+.btn:hover {
+  background-color: rgba(134, 192, 219, 1);
+  color: white
+}
+
+#logo {
+  padding:1vw;
+  width: 7vw;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+table > tr {
+  width: 50%;
+}
+
+input {
+  width: 100%;
+  padding: .5vw;
+  font-size: 1vw
+}
+
+select {
+  width: 100%;
+  padding: .5vw;
+  font-size: 1vw
+}
+
+@media screen and (max-width:500px) {
+  body {font-size:4vw}
+  .container {font-size:4vw;margin:0;padding:2vw}
+  #logo {width:13vw}
+  #menu {display:none}
+}
