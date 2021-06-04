@@ -16,9 +16,9 @@
 <div id=4></div>
 
 <script type="text/babel">
-      
-      for(let i=0;i<4;i++) {
-        ReactDOM.render(<h1>hello</h1>, document.getElementById(i))
+      var arr=[1,2,4,5,6,7];
+      for(let i=0;i<arr.length;i++) {
+        ReactDOM.render(<h1>{arr[i]}</h1>, document.getElementById(i))
       }
 </script>
 
