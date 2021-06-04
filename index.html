@@ -7,6 +7,22 @@
 </head>
 
 <body>
+  <div id=0></div>
+  <div id=0></div>
+  <div id=0></div>
+  <div id=0></div>
+  <div id=0></div>
+  <div id=0></div>
+  <div id=0></div>
+  
+  <script>
+    import React from "react";
+    import ReactDOM from 'react-dom';
+    var arr=['hi','hello','how','are','you'];
+    for (let i=0; i<arr.length; i++) {
+      ReactDOM.render(<p>{arr[i]}</p>,document.getElementById(i));
+    }
+  </script>
 </body>
 
 </html>
