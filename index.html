@@ -1,29 +1,27 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-  <script>
-    import React from "react";
-    import ReactDOM from 'react-dom';
-    var arr=['hi','hello','how','are','you'];
-    for (let i=0; i<arr.length; i++) {
-      ReactDOM.render(<p>{arr[i]}</p>,document.getElementById(i));
-    }
-  </script>
-</head>
-
+<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 <body>
-  <div id=0></div>
-  <div id=0></div>
-  <div id=0></div>
-  <div id=0></div>
-  <div id=0></div>
-  <div id=0></div>
-  <div id=0></div>
   
-  
-</body>
+<div id="mydiv"></div>
+<div id=0></div>
+<div id=1></div>
+<div id=2></div>
+<div id=3></div>
+<div id=4></div>
 
+<script type="text/babel">
+class Hello extends React.Component {
+  render() {
+    return <h1>Hello World!</h1>
+  }
+}
+for(let i=0;i<5;i++) {
+ReactDOM.render(<h1>Hello World</h1>, document.getElementById(i))
+}
+</script>
+
+</body>
 </html>
