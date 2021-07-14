@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-
-<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-<body>
-
-<div id="mydiv"></div>
-<div id=0></div>
-<div id=1></div>
-<div id=2></div>
-<div id=3></div>
-<div id=4></div>
-
-<script type="text/babel">
-      var arr=[1,2,4,5,6,7];
-      for(let i=0;i<arr.length;i++) {
-        ReactDOM.render(<h1>{arr[i]}</h1>, document.getElementById(i))
-      }
-</script>
-
-</body>
+      <head>
+            <title>The Onlooker</title>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <style>
+                  .bottom-nav {
+                        position: fixed;
+                        bottom: 0;
+                        display: flex;
+                        flex-flow: row;
+                  }
+                  
+            </style>
+      </head>
+      <body>
+            <div class='bottom-nav'>
+                  <div class='elements'><span class='material-icons-outlines'>home</span></div>
+                  <div class='elements'><span class='material-icons-outlines'>home</span></div>
+                  <div class='elements'><img src='Onlooker.svg'></div>
+                  <div class='elements'><span class='material-icons-outlines'>home</span></div>
+                  <div class='elements'><span class='material-icons-outlines'>home</span></div>
+      </body>
 </html>
