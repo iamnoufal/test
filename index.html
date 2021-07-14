@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Onlooker</title>
+    <meta name='viewport' content='width=device-width,initial-scale:1.0'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-flow: row;
+	width: 100%;	
+      }
+      .elements {
+        width: 20%;
+        font-size: 3vw;
+	padding: 2vw 0;
+	text-align: center;
+	color: white
+      }
+      .icon {
+        color: white;
+	width: 100%;
+	text-align: center;
+      }
+      #snapshots {
+	position: fixed;
+	bottom: -;
+	display: flex;
+	flex-flow: row;
+	overflow-x: scroll;
+	background-color: white;
+	width: 100%
+      }
+      .sscontainer {
+	width: 80%;
+	background-color: white;
+	margin: 4vw
+      }
+      .sscontainer > img {
+	width: 100%
+      }
+    </style>
+  </head>
+  <body style='background-image:url("bg.png");font-family:sans-serif;margin:0;padding:0'>
+    <div id='snapshots' style='display:none'>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+      <div class='sscontainer'>
+	<img src='hi.png'> ipsum dolor sit amet
+      </div>
+    </div>
+    <div id='snapshots'>
+      <div id='test' style='position:fixed;transition:1s;bottom:-100vw;margin:2vw;padding:2vw;background-color:rgba(255,255,255,0.8)'>
+        <img src='ss.png' width='100%'>
+      </div>
+      <div style='display:none;position:fixed;bottom:15vw;margin:2vw;padding:2vw;background-color:white'>
+        <img src='hi.png' width='100%'>
+        <h3>Muon G2 Experiment</h3>
+        <p>Sreejitha Mukherjee</p>
+      </div>
+    </div>
+    <div id='mask' style='display:none;position:fixed;width:100%;height:100vh;bottom:15vw;z-index:-1;background-color:rgba(0,0,0,0.5)'></div>
+    <div class='bottom-nav' style='background-color:rgba(0,0,0,0.8);height:15vw'>
+      <div class='elements'><i class='material-icons icon'>home</i>Home</div>
+      <div class='elements' id='ss'><i class='material-icons icon' onclick='te()'>library_books</i>Snapshots</div>
+      <div class='elements'></div>
+      <div class='elements'><i class='material-icons icon'>group_add</i>Join</div>
+      <div class='elements'><i class='material-icons icon'>account_circle</i>Account</div>
+    </div>
+    <div style='margin:0 44%;border:2px solid white;border-radius:100px;position:fixed;bottom:5px;padding:1vw'><img src='test.svg' style='width:100%'></div>
+    <script>
+      function te() {
+	test.style.bottom='15vw';
+	mask.style.display='block';
+	ss.innerHTML="<i class='material-icons icon' onclick='tt()'>close</i>Close"
+      }
+      function tt() {
+	test.style.bottom='-100vw';
+	mask.style.display='none';
+	ss.innerHTML="<i class='material-icons icon' onclick='te()'>home</i>Snapshots"
+      }
+    </script>
+  </body>
+</html>
