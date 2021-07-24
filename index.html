@@ -118,12 +118,12 @@
       function te(x,y,z,a) {
 	y.style.bottom='15vw';
 	mask.style.display='block';
-	a.innerHTML="<i class='material-icons icon' onclick=\"tt('"+x+"',"+y+",'"+z+"',"+a+")\">close</i>Close"
+	a.innerHTML="<i class='material-icons icon' onclick=\"tt('"+x+"',"+y.id+",'"+z+"',"+a.id+")\">close</i>Close"
       }
       function tt(x,y,z,a) {
 	y.style.bottom='-100vw';
 	mask.style.display='none';
-	a.innerHTML="<i class='material-icons icon' onclick=\"te('"+x+"',"+y+",'"+z+"',"+a+")\">"+x+"</i>"+z
+	a.innerHTML="<i class='material-icons icon' onclick=\"te('"+x+"',"+y.id+",'"+z+"',"+a.id+")\">"+x+"</i>"+z
       }
     </script>
   </body>
