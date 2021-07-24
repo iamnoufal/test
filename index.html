@@ -94,6 +94,9 @@
       <div id='test1' style='position:fixed;transition:1s;bottom:-100vw;margin:2vw;padding:2vw;background-color:rgba(255,255,255,0.8)'>
         <iframe src='https://docs.google.com/forms/d/e/1FAIpQLSeAnEa_cKG2O9R7nn19Fq0s3AakpdKn_5xOeB1rsSOFlFmDqg/viewform'></iframe>
       </div>
+      <div id='test2' style='position:fixed;transition:1s;bottom:-100vw;margin:2vw;padding:2vw;background-color:rgba(255,255,255,0.8)'>
+        <iframe src='https://docs.google.com/forms/d/e/1FAIpQLSeAnEa_cKG2O9R7nn19Fq0s3AakpdKn_5xOeB1rsSOFlFmDqg/viewform'></iframe>
+      </div>
       <div style='display:none;position:fixed;bottom:15vw;margin:2vw;padding:2vw;background-color:white'>
         <img src='hi.png' width='100%'>
         <h3>Muon G2 Experiment</h3>
@@ -103,24 +106,24 @@
     <div id='mask' style='display:none;position:fixed;width:100%;height:100vh;bottom:15vw;z-index:-1;background-color:rgba(0,0,0,0.5)'></div>
     <div class='bottom-nav' style='background-color:rgba(0,0,0,0.8);height:15vw'>
       <div class='elements'><i class='material-icons icon'>home</i>Home</div>
-      <div class='elements' id='ss'><i class='material-icons icon' onclick='te("library_books","test","Snapshots")'>library_books</i>Snapshots</div>
+      <div class='elements' id='ss'><i class='material-icons icon' onclick='te("library_books",test,"Snapshots",ss)'>library_books</i>Snapshots</div>
       <div class='elements'></div>
-      <div class='elements'><i class='material-icons icon' onclick='te("group_add","test1","Snapshots")'>group_add</i>Join</div>
-      <div class='elements'><i class='material-icons icon' onclick='te("account_circle",test2","Account")'>account_circle</i>Account</div>
+      <div class='elements' id='ss1'><i class='material-icons icon' onclick='te("group_add",test1,"Snapshots",ss1)'>group_add</i>Join</div>
+      <div class='elements' id='ss2'><i class='material-icons icon' onclick='te("account_circle",test2,"Account",ss2)'>account_circle</i>Account</div>
     </div>
     <div style='margin:0 44%;border:2px solid white;border-radius:100px;position:fixed;bottom:5px;padding:1vw'><img src='test.svg' style='width:100%'></div>
   
     
     <script>
-      function te(x,y,z) {
+      function te(x,y,z,a) {
 	y.style.bottom='15vw';
 	mask.style.display='block';
-	ss.innerHTML="<i class='material-icons icon' onclick='tt("+x+","+y+","+z")'>close</i>Close"
+	a.innerHTML="<i class='material-icons icon' onclick=\"tt('"+x+"',"+y+",'"+z+"',"+a+")\">close</i>Close"
       }
-      function tt(x,y,z) {
+      function tt(x,y,z,a) {
 	y.style.bottom='-100vw';
 	mask.style.display='none';
-	ss.innerHTML="<i class='material-icons icon' onclick='te("+x+","+y+","+z")'>"+x+"</i>"+z
+	a.innerHTML="<i class='material-icons icon' onclick=\"te('"+x+"',"+y+",'"+z+"',"+a+")\">"+x+"</i>"+z
       }
     </script>
   </body>
